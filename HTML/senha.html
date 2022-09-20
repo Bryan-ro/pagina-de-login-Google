@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gmail</title>
+        <link rel="icon" href="/images/google_icon.png">
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/senha.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <div class="nome">
+                    <img src="/images/google_logo.png">
+                    <h1>Olá!</h1>
+                    <div class="link">
+                        <svg aria-hidden="true" class="stUf5b" fill="currentColor" focusable="false" width="48px" height="48px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm6.36 14.83c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6z"></path></svg>
+                        <a href="/index.html" id="pg2"></a>
+                        <svg aria-hidden="true" class="stUf5b MSBt4d" fill="currentColor" focusable="false" width="24px" height="24px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg"><polygon points="12,16.41 5.29,9.71 6.71,8.29 12,13.59 17.29,8.29 18.71,9.71"></polygon></svg>
+                    </div>
+                </div>    
+                <div>
+                    <input id="senha" type="password" onblur="manterEmCima()">
+                    <label for="senha" class="digite">Digite sua senha</label>
+                    
+                </div>
+                    <input type="checkbox" id="verSenha" onclick="verSenha()">
+                    <label for="verSenha" class="verSenha">Mostrar senha</label>
+                <div>
+                    <p class="esqueceu"><a class="esqueceuLink" href="https://accounts.google.com/signup/v2/webcreateaccount?biz=false&cc=BR&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&dsh=S-821358177%3A1662424934117647&emr=1&flowEntry=SignUp&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AQN2RmU3b-qpvpMmfkYo3ZhS2wHm_C60pMYsb9iMd5AuOiu1IV1B8oJBhTx0P2WTmZQUQyJMrBvA&osid=1&service=mail">Esqueceu a senha?</a> <a href=""><input id="avancar" type="submit" value="Avançar"></a>
+                </div>
+            </div>
+        </div>
+        <div class="lingua">
+            <select class="is-select">
+                <option>Afrikaans</option>
+                <option>azərbaycan</option>
+                <option>bosanski</option>
+                <option>català</option>
+                <option>Čeština</option>
+                <option>Dansk</option>
+                <option>Deutsch</option>
+                <option>eesti</option>
+                <option>English (United Kingdom)</option>
+                <option>English (United States)</option>
+                <option>Español (España)</option>
+                <option>Español (Latinoamérica)</option>
+                <option>Español (Latinoamérica)</option>
+                <option>euskara</option>
+                <option>Filipino</option>
+                <option>Français (Canada)</option>
+                <option>Français (France)</option>
+                <option>Gaeilge</option>
+                <option>galego</option>
+                <option>Hrvatski</option>
+                <option>Indonesia</option>
+                <option>isiZulu</option>
+                <option>íslenska</option>
+                <option>Kiswahili</option>
+                <option>latviešu</option>
+                <option>lietuvių</option>
+                <option>magyar</option>
+                <option>Melayu</option>
+                <option>Nederlands</option>
+                <option>norsk</option>
+                <option>o‘zbek</option>
+                <option>polski</option>
+                <option selected>Português (Brasil)</option>
+                <option>Português (Portugal)</option>
+                <option>română</option>
+                <option>shqip</option>
+                <option>Tiếng Việt</option>
+                <option>Türkçe</option>
+                <option>Ελληνικά</option>
+                <option>Slovenčina</option>
+                <option>slovenščina</option>
+                <option>srpski (latinica)</option>
+                <option>Suomi</option>
+                <option>Русский</option>
+                <option>српски (ћирилица)</option>
+                <option>Українська</option>
+                <option>‫اردو</option>
+                <option>አማርኛ</option>
+                <option>नेपाली</option>
+            </select> 
+        </div> 
+        <ul>
+        <li class="ajuda"><a href="https://support.google.com/accounts?hl=pt-BR&visit_id=637980337343032700-3261760754&rd=2&p=account_iph#topic=3382296"> Ajuda</li></a>
+        <li class="privacidade"><a href="https://policies.google.com/privacy?gl=BR&hl=pt-BR">Privacidade</li></a>
+        <li class="termos"><a href="https://policies.google.com/terms?gl=BR&hl=pt-BR"> Termos</li></a>
+    </ul>
+    <script>
+        const dadoPaginaAnterior = sessionStorage.getItem('dados');
+    const pg2 = document.querySelector('#pg2');
+    pg2.innerHTML += dadoPaginaAnterior
+
+   function verSenha () {
+        let show =  document.querySelector('#verSenha')
+        let senha = document.querySelector('#senha')
+        if(senha.type == 'password') {
+            senha.type = 'text'
+        } else {
+            senha.type = 'password'
+        }
+   } 
+
+
+function manterEmCima () {
+    let senha = document.getElementById('senha')
+
+    console.log(senha.value == '')
+    if(senha.value == '') {
+        senha.blur()
+    } else {    
+        senha.focus()
+    }
+}
+   
+
+</script>
+    </body>
+
+</html>

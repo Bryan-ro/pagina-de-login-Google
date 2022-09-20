@@ -1,0 +1,229 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 237px;
+}
+
+@media screen and (max-width: 1350px) {
+    body {
+        margin-top: 90px;
+    }
+    
+}
+
+.container {
+    width: 449px;
+    height: 504px;
+    border: 1.5px solid rgb(209, 204, 204);
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+div img {
+    margin-top: 45px;
+    margin-left: 150px;   
+}
+
+div h1 {
+    margin-top: 15px;
+    margin-left: 140px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-weight: 540;
+    color: #1d1c1c;
+    font-weight: 650px;
+}
+
+div h2 {
+    margin-top: 15px;
+    color: #050505;
+    margin-left: 140px;
+    font-family: Arial;
+    font-size: 15px;
+    text-indent: 6.5px;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-fill-color: #252525;
+}
+
+#email {
+    margin: 35px 0 0 5px;
+    height: 54px;
+    width: 365px;
+    border-radius: 4px;
+    border: solid 1px rgb(209, 204, 204);
+    font-size: 17px;
+    text-indent: 15px;
+}
+
+#email:focus {
+    outline: none !important;
+    border-width: 2.5px;
+    border-color: #2c7dd3;
+    text-indent: 10px;
+    background-color: transparent;
+}
+
+label {
+    position: absolute;
+    margin: 57px 0 0 -350px;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;  
+    -khtml-user-select: none;     
+    -moz-user-select: none;       
+    -ms-user-select: none;  
+    user-select: none;   
+    cursor: text;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(110, 107, 107);
+    transition: .2s;
+}
+
+input:focus+#email_telefone {
+    margin: 23px 0 0 -360px;
+    padding: 5px;
+    background-color: white;
+    font-size: 13px;
+    color: #3e89eb;
+}
+
+input:invalid+#email_telefone {
+    margin: 28px 0 0 -360px;
+    padding: 1px;
+    background-color: white;
+    font-size: 13px;
+    color: #3e89eb;
+}
+
+.esqueceu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14.5px;
+    text-decoration: none;
+    color:#0771e2;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-fill-color: #0771e2;
+}
+
+.aviso {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #726767;
+    margin-top: 40px;
+}
+
+.aviso2  {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #726767;
+    margin-top: 7px;
+}
+
+.avisoLink {
+    text-decoration: none;
+    color:#0771e2;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-fill-color: #0771e2;
+}
+
+
+.criarContaP {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 13.5px;
+    
+}
+
+.criarConta {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:#1a73e8;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-fill-color: #1a73e8;
+}
+
+.criarConta:hover {
+    background-color: #e4f5ff;
+}
+
+#avancar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-fill-color: white;
+    text-decoration: none;
+    height: 35px;
+    width: 100px;
+    border-radius: 4px;
+    border-color: #1a73e8;
+    background-color: #1a73e8;
+    border-width: 0px;
+    margin-left: 220px;
+    margin-top: -10;
+    cursor: pointer;
+}
+
+#avancar:hover {
+    background-color: #1d68ca;
+}
+
+.lingua {
+    position: absolute;
+    margin: 512px 0 0 -250px;
+    overflow: hidden;
+    
+}
+
+.is-select {
+    border-color: white;
+    color: rgb(94, 93, 93);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+.is-select {
+    padding: 10px;
+}
+
+.ajuda {
+    position: absolute;
+    margin-top: 525px;
+    margin-left: -220px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 93, 93);
+    font-size: 12px;
+}
+
+.ajuda a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 93, 93);
+    text-decoration: none;
+}
+
+.privacidade {
+    position: absolute;
+    margin-top: 525px;
+    margin-left: -160px;
+    font-size: 12px;
+}
+
+.privacidade a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 93, 93);
+    text-decoration: none;
+}
+
+.termos {
+    position: absolute;
+    margin-top: 525px;
+    margin-left: -70px;
+    font-size: 12px;
+}
+
+.termos a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(94, 93, 93);
+    text-decoration: none;
+}
+
+
+

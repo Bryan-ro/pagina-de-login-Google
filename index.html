@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gmail</title>
+        <link rel="icon" href="/images/google_icon.png">
+        <link rel="stylesheet" href="/CSS/reset.css">
+        <link rel="stylesheet" href="/CSS/email.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <img src="/images/google_logo.png">
+                <h1>Fazer login</h1>
+                <h2>Ir para o Gmail</h2>
+                <div>
+                    <input id="email" type="url">
+                    <label for="email" id="email_telefone">E-mail ou telefone</label>
+                    
+                </div>
+                <p><a class="esqueceu" href="https://accounts.google.com/signin/v2/usernamerecovery?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&dsh=S-1811757392%3A1662485331473243&emr=1&flowEntry=ServiceLogin&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AQN2RmV0C7iHrXdBh-uPTxFiVRTOvGPQ76pm0Hc-TkRasV2fREfCbsxJKRWmw4WOWJ2zgUxUGC4jUg&osid=1&service=mail"> <br> &nbsp Esqueceu seu e-mail?</a></p>
+                <p class="aviso">Não está no seu computador? Use uma janela de</p>
+                <p class="aviso2">navegação privada para fazer login. <a class="avisoLink" href="https://support.google.com/accounts/answer/2917834?visit_id=637980337343032700-3261760754&p=signin_privatebrowsing&hl=pt-BR&rd=1">Saiba mais</a>
+                <div>
+                    <p class="criarContaP"><a class="criarConta" href="https://accounts.google.com/signup/v2/webcreateaccount?biz=false&cc=BR&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&dsh=S-821358177%3A1662424934117647&emr=1&flowEntry=SignUp&flowName=GlifWebSignIn&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AQN2RmU3b-qpvpMmfkYo3ZhS2wHm_C60pMYsb9iMd5AuOiu1IV1B8oJBhTx0P2WTmZQUQyJMrBvA&osid=1&service=mail">Criar conta</a> <a href="/HTML/senha.html"><input id="avancar" type="submit" value="Avançar"></a>
+                </div>
+            </div>
+        </div>
+        <div class="lingua">
+            <select class="is-select">
+                <option>Afrikaans</option>
+                <option>azərbaycan</option>
+                <option>bosanski</option>
+                <option>català</option>
+                <option>Čeština</option>
+                <option>Dansk</option>
+                <option>Deutsch</option>
+                <option>eesti</option>
+                <option>English (United Kingdom)</option>
+                <option>English (United States)</option>
+                <option>Español (España)</option>
+                <option>Español (Latinoamérica)</option>
+                <option>Español (Latinoamérica)</option>
+                <option>euskara</option>
+                <option>Filipino</option>
+                <option>Français (Canada)</option>
+                <option>Français (France)</option>
+                <option>Gaeilge</option>
+                <option>galego</option>
+                <option>Hrvatski</option>
+                <option>Indonesia</option>
+                <option>isiZulu</option>
+                <option>íslenska</option>
+                <option>Kiswahili</option>
+                <option>latviešu</option>
+                <option>lietuvių</option>
+                <option>magyar</option>
+                <option>Melayu</option>
+                <option>Nederlands</option>
+                <option>norsk</option>
+                <option>o‘zbek</option>
+                <option>polski</option>
+                <option selected>Português (Brasil)</option>
+                <option>Português (Portugal)</option>
+                <option>română</option>
+                <option>shqip</option>
+                <option>Tiếng Việt</option>
+                <option>Türkçe</option>
+                <option>Ελληνικά</option>
+                <option>Slovenčina</option>
+                <option>slovenščina</option>
+                <option>srpski (latinica)</option>
+                <option>Suomi</option>
+                <option>Русский</option>
+                <option>српски (ћирилица)</option>
+                <option>Українська</option>
+                <option>‫اردو</option>
+                <option>አማርኛ</option>
+                <option>नेपाली</option>
+            </select> 
+        </div> 
+        <ul>
+        <li class="ajuda"><a href="https://support.google.com/accounts?hl=pt-BR&visit_id=637980337343032700-3261760754&rd=2&p=account_iph#topic=3382296"> Ajuda</li></a>
+        <li class="privacidade"><a href="https://policies.google.com/privacy?gl=BR&hl=pt-BR">Privacidade</li></a>
+        <li class="termos"><a href="https://policies.google.com/terms?gl=BR&hl=pt-BR"> Termos</li></a>
+    </ul>
+    <script>
+        const dado = document.querySelector('#email')
+        const link = document.querySelector('#avancar')
+
+    link.addEventListener('click', (e) => {
+        sessionStorage.setItem('dados', dado.value);
+    })
+    </script>
+    </body>
+
+</html>
